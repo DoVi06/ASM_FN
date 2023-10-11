@@ -1,0 +1,4 @@
+ 2. Xác định các truy vấn nghiệp vụ:
+- Số lượng cá thể của từng loại vật nuôi?
+- Số lượng vật nuôi không thuần chủng?
+- Số lượng vật nuôi có tình trạng sức khoẻ tốt?

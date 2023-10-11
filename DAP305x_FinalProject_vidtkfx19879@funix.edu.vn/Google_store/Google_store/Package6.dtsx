@@ -1,0 +1,3233 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/31/2023 4:20:14 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-MB682TV"
+  DTS:CreatorName="DESKTOP-MB682TV\ViVi"
+  DTS:DTSID="{76482423-9498-4F52-8AB0-E5A807D0E084}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5223.0"
+  DTS:LocaleID="1066"
+  DTS:ObjectName="Package6"
+  DTS:PackageType="5"
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{2A2E1E33-5AA2-4378-B93A-77A95F4C1E47}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-MB682TV\SQLEXPRESS.END]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3FC5022C-CE41-4837-B9E2-D7E9C7A15406}"
+      DTS:ObjectName="DESKTOP-MB682TV\SQLEXPRESS.END">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-MB682TV\SQLEXPRESS;Initial Catalog=END;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-MB682TV\SQLEXPRESS.END 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A84F9D43-5A56-4627-877E-0B665F73095D}"
+      DTS:ObjectName="DESKTOP-MB682TV\SQLEXPRESS.END 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-MB682TV\SQLEXPRESS;Initial Catalog=END;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-MB682TV\SQLEXPRESS.Google_store]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E06129C5-D71B-45AC-A600-25B5F08EA3D3}"
+      DTS:ObjectName="DESKTOP-MB682TV\SQLEXPRESS.Google_store">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-MB682TV\SQLEXPRESS;Initial Catalog=Google_store;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package6-{E06129C5-D71B-45AC-A600-25B5F08EA3D3}DESKTOP-MB682TV\SQLEXPRESS.Google_store;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-MB682TV\SQLEXPRESS.Google_store 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A5FB969E-1F5F-4CBD-95F2-ECB456D799E1}"
+      DTS:ObjectName="DESKTOP-MB682TV\SQLEXPRESS.Google_store 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-MB682TV\SQLEXPRESS;Initial Catalog=Google_store;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-MB682TV\SQLEXPRESS.Google_store 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1586DAB9-B842-4DB1-BE83-DE38C1CAC37C}"
+      DTS:ObjectName="DESKTOP-MB682TV\SQLEXPRESS.Google_store 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-MB682TV\SQLEXPRESS;Initial Catalog=Google_store;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{53815882-0D9C-4223-AF9C-50223E5FE701}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\ViVi\END\DimCatalory.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{558FA4F2-1EE2-4948-880D-76AEA0C22176}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\DimDate.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{05F427F4-E729-4253-855A-EEBB092F888F}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\DimSize.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E77CFBA7-FA4B-4BB8-ADDB-37C74DF73393}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\DimSize.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{77EE88D1-4DDF-4A80-8E9E-3D2A6C883A69}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\DimSize.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8F67E3E6-94E2-4398-9702-2DE1C1915FBC}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\DimSize.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{CB09DF36-63C5-4900-BE31-8D714C411035}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\DimSize.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 7]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{CB3C900E-A0A1-4916-91FD-28A73F41F43A}"
+      DTS:ObjectName="Excel Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\DimSize.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 8]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{EBE6AF9E-433F-4E15-AD9A-ACA76D4D6994}"
+      DTS:ObjectName="Excel Connection Manager 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ViVi\END\426.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BE898769-066D-4832-9F1E-7B224438671F}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\ViVi\END\DimDate.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReleasedYear"
+              DTS:DTSID="{D7C97764-3F94-4405-93E4-6C2A7D5EE7AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReleasedQuarter"
+              DTS:DTSID="{8EA15CCD-E0A6-40B8-B43A-7DE58F0F8779}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReleasedMonth"
+              DTS:DTSID="{60E81992-89EC-456D-8AEA-AF8A9B709B14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReleasedDay"
+              DTS:DTSID="{D2C5A924-9983-4DA7-8E50-13FA30A36252}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastUpdatedYear"
+              DTS:DTSID="{91443F38-2D42-4D4F-876C-C71654E4B70F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastUpdatedQuarter"
+              DTS:DTSID="{5F69B214-0D0E-4F78-A89E-1A1C064E9DF2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastUpdatedMonth"
+              DTS:DTSID="{C9BFBB43-E47B-4B6B-B880-64FAC0D2CE8D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastUpdatedDay"
+              DTS:DTSID="{DB7FF115-DC8A-4CB3-A352-4902F08C1D74}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Released"
+              DTS:DTSID="{8BE1D183-E421-40C7-95B4-3D2E3F727074}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last_Updated"
+              DTS:DTSID="{356DC4F2-A01C-4639-B29C-34986978AD5F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DateID"
+              DTS:DTSID="{78E3FFDB-34F2-49C5-8227-9D39BD696C6A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9C765612-ADCD-4686-B4EB-49344DC46661}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\ViVi\END\New Text Document (2).txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SizeID"
+              DTS:DTSID="{DBE8C06F-6589-4B77-B9F8-B89C68786A8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Size"
+              DTS:DTSID="{1E75B9FA-5EE6-4A77-9B13-3318794DB949}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="type_size"
+              DTS:DTSID="{2733B6B6-62E0-4274-8E9B-D1BEB82C7E9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="size_no"
+              DTS:DTSID="{F9EAB497-C47D-494D-A11B-4268AFDFB328}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="size_kb"
+              DTS:DTSID="{0608089D-F46D-4967-A042-35551DE676BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="size_cov"
+              DTS:DTSID="{89074AB3-BE2C-4822-802A-A4C4B1A31256}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{86070BC8-3EC9-4CCA-BCBE-87CFCA926949}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:DataRowsToSkip="1"
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\ViVi\END\DimSize.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SizeID"
+              DTS:DTSID="{C355B8A4-0D8C-4618-9FEC-D98C11301643}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Size"
+              DTS:DTSID="{42F88B6F-326B-4891-BAB7-1F7BF3ED264A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="type_size"
+              DTS:DTSID="{C5E490C3-FAAA-4043-B467-58941AF4F83F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="size_no"
+              DTS:DTSID="{84D27EB1-BF32-4258-8F7D-27FA0279C6D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="size_kb"
+              DTS:DTSID="{F02C4AA5-D1B3-486B-BC6D-BF074C0EA694}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="size_cov"
+              DTS:DTSID="{5E0F92B4-2B8B-4E66-B14D-971252142D50}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{166EB825-D8A4-4C73-995A-3A9866CE717E}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\ViVi\END\DimCatelogy.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{0D53F1F4-5B68-4CBC-9FE7-B75B4FD941B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CategoryID"
+              DTS:DTSID="{C7B0BBC2-D865-4BB3-AEED-A44067B8B0B3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 4"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{2a4fc78e-730b-4833-97e7-c31951999ccf}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 4"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 4\Aggregate"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Aggregate"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[ReleasedYear]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedYear"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedYear]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[ReleasedQuarter]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedQuarter"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedQuarter]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[ReleasedMonth]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedMonth"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedMonth]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[ReleasedDay]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedDay"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedDay]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[LastUpdatedYear]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedYear"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedYear]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[LastUpdatedQuarter]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedQuarter"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedQuarter]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[LastUpdatedMonth]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedMonth"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedMonth]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[LastUpdatedDay]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedDay"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedDay]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[Released]"
+                      cachedDataType="dbDate"
+                      cachedName="Released"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1].Columns[Last_Updated]"
+                      cachedDataType="dbDate"
+                      cachedName="Last_Updated"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedYear]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedYear]"
+                      name="ReleasedYear">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedYear]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedQuarter]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedQuarter]"
+                      name="ReleasedQuarter">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedQuarter]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedMonth]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedMonth]"
+                      name="ReleasedMonth">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedMonth]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedDay]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedDay]"
+                      name="ReleasedDay">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedDay]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedYear]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedYear]"
+                      name="LastUpdatedYear">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedYear]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedQuarter]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedQuarter]"
+                      name="LastUpdatedQuarter">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedQuarter]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedMonth]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedMonth]"
+                      name="LastUpdatedMonth">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedMonth]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedDay]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedDay]"
+                      name="LastUpdatedDay">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedDay]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Released]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Released]"
+                      name="Released">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Last_Updated]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Last_Updated]"
+                      name="Last_Updated">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 4\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 4\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Inputs[Derived Column Input].Columns[Released]"
+                      cachedDataType="dbDate"
+                      cachedName="Released"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Inputs[Derived Column Input].Columns[Last_Updated]"
+                      cachedDataType="dbDate"
+                      cachedName="Last_Updated"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 4\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedYear]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedYear]"
+                      name="ReleasedYear"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[YEAR](#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">YEAR(Released)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedMonth]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedMonth]"
+                      name="ReleasedMonth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[MONTH](#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">MONTH(Released)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedQuarter]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedQuarter]"
+                      name="ReleasedQuarter"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DATEPART]("QQ",#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("QQ",Released)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedDay]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[ReleasedDay]"
+                      name="ReleasedDay"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DAY](#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DAY(Released)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedYear]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedYear]"
+                      name="LastUpdatedYear"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[YEAR](#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">YEAR(Last_Updated)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedQuarter]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedQuarter]"
+                      name="LastUpdatedQuarter"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DATEPART]("QQ",#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("QQ",Last_Updated)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedMonth]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedMonth]"
+                      name="LastUpdatedMonth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[MONTH](#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">MONTH(Last_Updated)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedDay]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output].Columns[LastUpdatedDay]"
+                      name="LastUpdatedDay"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DAY](#{Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DAY(Last_Updated)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 4\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 4\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1066"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 4\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReleasedYear]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedYear"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedYear]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedYear]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReleasedQuarter]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedQuarter"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedQuarter]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedQuarter]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReleasedMonth]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedMonth"
+                      cachedSortKeyPosition="3"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedMonth]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedMonth]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReleasedDay]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedDay"
+                      cachedSortKeyPosition="4"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedDay]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedDay]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[LastUpdatedYear]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedYear"
+                      cachedSortKeyPosition="5"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedYear]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedYear]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[LastUpdatedQuarter]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedQuarter"
+                      cachedSortKeyPosition="6"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedQuarter]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedQuarter]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[LastUpdatedMonth]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedMonth"
+                      cachedSortKeyPosition="7"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedMonth]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedMonth]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[LastUpdatedDay]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedDay"
+                      cachedSortKeyPosition="8"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedDay]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedDay]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[DateID]"
+                      cachedDataType="i4"
+                      cachedName="DateID"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DateID]"
+                      lineageId="Package\Data Flow Task 4\Script Component.Outputs[Output 0].Columns[DateID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[Released]"
+                      cachedDataType="dbDate"
+                      cachedName="Released"
+                      cachedSortKeyPosition="9"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Released]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[Released]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].Columns[Last_Updated]"
+                      cachedDataType="dbDate"
+                      cachedName="Last_Updated"
+                      cachedSortKeyPosition="10"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Last_Updated]"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[Last_Updated]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedYear]"
+                      dataType="i4"
+                      name="ReleasedYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedQuarter]"
+                      dataType="i4"
+                      name="ReleasedQuarter" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedMonth]"
+                      dataType="i4"
+                      name="ReleasedMonth" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReleasedDay]"
+                      dataType="i4"
+                      name="ReleasedDay" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedYear]"
+                      dataType="i4"
+                      name="LastUpdatedYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedQuarter]"
+                      dataType="i4"
+                      name="LastUpdatedQuarter" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedMonth]"
+                      dataType="i4"
+                      name="LastUpdatedMonth" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastUpdatedDay]"
+                      dataType="i4"
+                      name="LastUpdatedDay" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DateID]"
+                      dataType="i4"
+                      name="DateID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Released]"
+                      dataType="dbDate"
+                      name="Released" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Last_Updated]"
+                      dataType="dbDate"
+                      name="Last_Updated" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 4\Google_store"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Google_store"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Google-Playstore]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 4\Google_store.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-MB682TV\SQLEXPRESS.END 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-MB682TV\SQLEXPRESS.END 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[App_Name]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[App_Name]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[App_Name]"
+                      name="App_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[App_Id]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[App_Id]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[App_Id]"
+                      name="App_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Category]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Category]"
+                      name="Category"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Rating]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Rating]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Rating]"
+                      name="Rating"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Rating_Count]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Rating_Count]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Rating_Count]"
+                      name="Rating_Count"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Installs]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Installs]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Installs]"
+                      name="Installs"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Minimum_Installs]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Minimum_Installs]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Minimum_Installs]"
+                      name="Minimum_Installs"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Maximum_Installs]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Maximum_Installs]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Maximum_Installs]"
+                      name="Maximum_Installs"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Free]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Free]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Free]"
+                      name="Free"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Price]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Price]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Price]"
+                      name="Price"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Currency]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Currency]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Currency]"
+                      name="Currency"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Size]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Size]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Size]"
+                      name="Size"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Minimum_Android]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Minimum_Android]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Minimum_Android]"
+                      name="Minimum_Android"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Developer_Id]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Developer_Id]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Developer_Id]"
+                      name="Developer_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Developer_Website]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Developer_Website]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Developer_Website]"
+                      name="Developer_Website"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Developer_Email]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Developer_Email]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Developer_Email]"
+                      name="Developer_Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Released]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Released]"
+                      name="Released"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Last_Updated]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Last_Updated]"
+                      name="Last_Updated"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Content_Rating]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Content_Rating]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Content_Rating]"
+                      name="Content_Rating"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Privacy_Policy]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Privacy_Policy]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Privacy_Policy]"
+                      name="Privacy_Policy"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Ad_Supported]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Ad_Supported]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Ad_Supported]"
+                      name="Ad_Supported"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[In_App_Purchases]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[In_App_Purchases]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[In_App_Purchases]"
+                      name="In_App_Purchases"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Editors_Choice]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Editors_Choice]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Editors_Choice]"
+                      name="Editors_Choice"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Scraped_Time]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Scraped_Time]"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].Columns[Scraped_Time]"
+                      name="Scraped_Time"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[App_Name]"
+                      dataType="nText"
+                      name="App_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[App_Id]"
+                      dataType="nText"
+                      name="App_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Category]"
+                      dataType="wstr"
+                      length="50"
+                      name="Category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Rating]"
+                      dataType="r8"
+                      name="Rating" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Rating_Count]"
+                      dataType="i4"
+                      name="Rating_Count" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Installs]"
+                      dataType="nText"
+                      name="Installs" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Minimum_Installs]"
+                      dataType="nText"
+                      name="Minimum_Installs" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Maximum_Installs]"
+                      dataType="nText"
+                      name="Maximum_Installs" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Free]"
+                      dataType="bool"
+                      name="Free" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Price]"
+                      dataType="r8"
+                      name="Price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Currency]"
+                      dataType="wstr"
+                      length="50"
+                      name="Currency" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Size]"
+                      dataType="wstr"
+                      length="50"
+                      name="Size" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Minimum_Android]"
+                      dataType="wstr"
+                      length="50"
+                      name="Minimum_Android" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Developer_Id]"
+                      dataType="nText"
+                      name="Developer_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Developer_Website]"
+                      dataType="nText"
+                      name="Developer_Website" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Developer_Email]"
+                      dataType="nText"
+                      name="Developer_Email" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Released]"
+                      dataType="dbDate"
+                      name="Released" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Last_Updated]"
+                      dataType="dbDate"
+                      name="Last_Updated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Content_Rating]"
+                      dataType="wstr"
+                      length="50"
+                      name="Content_Rating" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Privacy_Policy]"
+                      dataType="nText"
+                      name="Privacy_Policy" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Ad_Supported]"
+                      dataType="bool"
+                      name="Ad_Supported" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[In_App_Purchases]"
+                      dataType="bool"
+                      name="In_App_Purchases" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Editors_Choice]"
+                      dataType="wstr"
+                      length="50"
+                      name="Editors_Choice" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output].ExternalColumns[Scraped_Time]"
+                      dataType="dbTimeStamp2"
+                      name="Scraped_Time"
+                      scale="7" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[App_Name]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[App_Name]"
+                      name="App_Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[App_Id]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[App_Id]"
+                      name="App_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Category]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Category]"
+                      name="Category" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Rating]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Rating]"
+                      name="Rating" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Rating_Count]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Rating_Count]"
+                      name="Rating_Count" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Installs]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Installs]"
+                      name="Installs" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Minimum_Installs]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Minimum_Installs]"
+                      name="Minimum_Installs" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Maximum_Installs]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Maximum_Installs]"
+                      name="Maximum_Installs" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Free]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Free]"
+                      name="Free" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Price]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Price]"
+                      name="Price" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Currency]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Currency]"
+                      name="Currency" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Size]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Size]"
+                      name="Size" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Minimum_Android]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Minimum_Android]"
+                      name="Minimum_Android" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Developer_Id]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Developer_Id]"
+                      name="Developer_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Developer_Website]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Developer_Website]"
+                      name="Developer_Website" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Developer_Email]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Developer_Email]"
+                      name="Developer_Email" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Released]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Released]"
+                      name="Released" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Last_Updated]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Last_Updated]"
+                      name="Last_Updated" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Content_Rating]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Content_Rating]"
+                      name="Content_Rating" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Privacy_Policy]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Privacy_Policy]"
+                      name="Privacy_Policy" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Ad_Supported]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Ad_Supported]"
+                      name="Ad_Supported" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[In_App_Purchases]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[In_App_Purchases]"
+                      name="In_App_Purchases" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Editors_Choice]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Editors_Choice]"
+                      name="Editors_Choice" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Scraped_Time]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[Scraped_Time]"
+                      name="Scraped_Time"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 4\Script Component"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component"
+              version="13">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+    int count = 0;
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        count++;
+        Row.DateID = count;
+        /*
+         * Add your code here
+         */
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public Int32 DateID
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool DateID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_3aaaa321930c470d8293c509f1e6446a.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58595e55-74be-4779-bd19-5854a67426e6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_3aaaa321930c470d8293c509f1e6446a</RootNamespace>
+    <AssemblyName>SC_3aaaa321930c470d8293c509f1e6446a</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_3aaaa321930c470d8293c509f1e6446a" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3aaaa321930c470d8293c509f1e6446a.Properties.Settings.get_Default():SC_3aaaa321930c470d8293c509f1e6446a.Properties.Sett" +
+    "ings")]
+
+namespace SC_3aaaa321930c470d8293c509f1e6446a.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_3aaaa321930c470d8293c509f1e6446a</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_3aaaa321930c470d8293c509f1e6446a</msb:DisplayName>
+    <msb:ProjectId>{07569C01-3D22-4114-93D2-0BD5B6B1D7AE}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_3aaaa321930c470d8293c509f1e6446a.csproj" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_3aaaa321930c470d8293c509f1e6446a")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_3aaaa321930c470d8293c509f1e6446a")]
+[assembly: AssemblyCopyright("Copyright @  2023")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3aaaa321930c470d8293c509f1e6446a.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3aaaa321930c470d8293c509f1e6446a.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3aaaa321930c470d8293c509f1e6446a.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_3aaaa321930c470d8293c509f1e6446a.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_3aaaa321930c470d8293c509f1e6446a.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_3aaaa321930c470d8293c509f1e6446a.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDACBNwmQAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAAEjEA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMAwAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAGBEAAAAgAAAAEgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAD0
+MAAAAAAAAEgAAAACAAUAnCEAAGwOAAABAAAAAAAAAAgwAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACipuAgJ7AQAABBdYfQEAAAQDAnsB
+AAAEbwYAAAYqHgIoCgAABioqAgMEBSgSAAAKKjoCFgOMGgAAASgTAAAKKloDLAgCFigUAAAKKnIB
+AABwcxUAAAp6HgIoFgAACioeAigXAAAKKn4CKBgAAAoCAnMOAAAGfQIAAAQCAnMPAAAGfQMAAAQq
+kgRyngAAcBpvGQAACiwVAgUCAygaAAAKDgRzBQAABm8MAAAGKkorBwIDbw0AAAYDbwgAAAYt8SoG
+KjoCKBsAAAoCA30EAAAEKjoCKBsAAAoCA30FAAAEKh4CKBsAAAoqrn4GAAAELR5yrgAAcNAHAAAC
+KBwAAApvHQAACnMeAAAKgAYAAAR+BgAABCoafgcAAAQqHgKABwAABCoafggAAAQqHgIoHwAACiou
+cxUAAAaACAAABCoAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAJAUAACN+AACQ
+BQAAHAYAACNTdHJpbmdzAAAAAKwLAAAgAQAAI1VTAMwMAAAQAAAAI0dVSUQAAADcDAAAkAEAACNC
+bG9iAAAAAAAAAAIAAAFXFaABCQEAAAD6ATMAFgAAAQAAACAAAAAIAAAACAAAABYAAAAPAAAAHwAA
+ABAAAAADAAAABQAAAAYAAAABAAAABAAAAAEAAAAAAPsCAQAAAAAABgD1AUwEBgCJAkwEBgBBATkE
+DwDABAAABgBuAY4DBgDYAY4DBgC5AY4DBgBwAo4DBgAVAo4DBgAuAo4DBgCFAY4DBgCgAcQCCgBJ
+Ao4ACgALBI4ADgD8A44ACgDXA44ACgCGBY4ABgBJBUYDBgAkATkEBgAcBGwEBgDLA3kDEgD0AOUC
+EgBVAeUCEgDcAGQDBgAJAUwEBgABAEYDBgCgA0YDBgDeAkYDBgC6A0YDBgCvAEYDBgBgAEYDBgAR
+Bo4DAAAAAAcAAAAAAAEAAQABABAAWQMAABAAAQABAAEAEADvAwAAOQACAAUAAQAQAGgFAABFAAIA
+CgABABAAPQUAAEkABAAOAAEAEAD+BAAASQAFAA8AAAAQAHMEzwRJAAYAEAAAARAALQXPBGEACAAU
+AAEAlgVjAAYAPQVmAAYA/gRqAAEAdgVuAAEAdgVuABEATQNyABEAzAB2ABEAUAB6AFAgAAAAAMYA
+pwIGAAEAWCAAAAAAxgCyAgYAAQBgIAAAAADGAO4FfgABAHwgAAAAAIYYLAQGAAIAhCAAAAAAhhgs
+BBsAAgCPIAAAAACGCBAAAQAFAJ4gAAAAAIYIIwOEAAYAtSAAAAAAhgAFBisABwC9IAAAAACGAFAF
+KwAHAMUgAAAAAIYYLAQGAAcA5SAAAAAAxgDhBYkABwAKIQAAAADGAdoFfgALAB0hAAAAAMYB7gV+
+AAwAHyEAAAAAhhgsBJMADQAuIQAAAACGGCwEkwAOAD0hAAAAAIMYLAQGAA8ARSEAAAAAkwgYBJkA
+DwBxIQAAAACTCLQAngAPAHghAAAAAJMIwACjAA8AgCEAAAAAlghcBakAEACHIQAAAACGGCwEBgAQ
+AI8hAAAAAJEYMgSuABAAAAABAAkGAAABABEEAAACAAgFAAADAOUDAAABAL4CAAABAL4CAAABABsA
+AAACAIQAAAADABEEAAAEAOUDAAABABEEAAABAAkGAAABAIwFAAABAIwFAAABAL4CCQAsBAEAEQAs
+BAYAGQAsBAoAKQAsBBAAMQAsBBAAOQAsBBAAQQAsBBAASQAsBBAAUQAsBBAAWQAsBBAAYQAsBBAA
+aQAsBAYAmQAsBAYAuQAsBBUAyQAsBAYAiQCnAgYAiQCyAgYAcQAsBBsAcQA9AyUAcQA1AwEA2QAs
+BBAAcQAFBisAcQBQBSsAiQAsBAYA4QA2BS8AiQAcBTYAkQAsBAYA8QByADwA8QANBkMAoQAsBEkA
+wQAsBAYALgALAMkALgATANIALgAbAPEALgAjAPoALgArACMBLgAzACMBLgA7ACMBLgBDAPoALgBL
+ACkBLgBTACMBLgBbAEABQwBjAIoBaQBzAPEAiQBzAPEA4wBrAIoBAQF7AIoBAwABAAcAAwAIAAUA
+AAAUALIAAAAnA7YAAAAcBLoAAADUAL8AAABgBcQAAQAGAAMAAQAHAAUAAgARAAcAAgASAAkAAQAT
+AAkAAgAUAAsABIAAAAEAAAAAAAAAAAAAAAAAIwAAAAQAAAAAAAAAAAAAAFEARwAAAAAAEAAAAAAA
+AAAAAAAAWgCcBQAAAAAQAAAAAAAAAAAAAABaALkFAAAAAAQAAAAAAAAAAAAAAFEARgMAAAAAAAAA
+AAEAAAB9BAAAAAAASW50MzIAPE1vZHVsZT4Ac2V0X0RhdGVJRABJbnB1dElEAFNDXzNhYWFhMzIx
+OTMwYzQ3MGQ4MjkzYzUwOWYxZTY0NDZhAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBSdW50aW1l
+VHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUATWljcm9zb2Z0LlNxbFNlcnZl
+ci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1
+cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJH
+ZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxl
+QXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRl
+AEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3Nl
+bWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBD
+b21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBB
+c3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0
+dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRy
+aWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5WZXJzaW9u
+aW5nAFN0cmluZwBTeXN0ZW0uQ29tcG9uZW50TW9kZWwAU0NfM2FhYWEzMjE5MzBjNDcwZDgyOTNj
+NTA5ZjFlNjQ0NmEuZGxsAHNldF9EYXRlSURfSXNOdWxsAFNldE51bGwAc2V0X0l0ZW0AU3lzdGVt
+AHJlc291cmNlTWFuAFNjcmlwdE1haW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2Jh
+bGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJp
+bmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0TWFwAElucHV0MEJ1
+ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgAuY3Rv
+cgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2Vydmlj
+ZXMAU3lzdGVtLlJlc291cmNlcwBTQ18zYWFhYTMyMTkzMGM0NzBkODI5M2M1MDlmMWU2NDQ2YS5Q
+cm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfM2FhYWEzMjE5
+MzBjNDcwZDgyOTNjNTA5ZjFlNjQ0NmEuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1u
+SW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBDb25uZWN0aW9ucwBPYmpl
+Y3QARW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQA
+U2NyaXB0Q29tcG9uZW50AGNvdW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9z
+b2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJv
+Y2Vzc0lucHV0Um93AE5leHRSb3cAZ2V0X0Fzc2VtYmx5AAAAAICbSQBzAE4AdQBsAGwAIABwAHIA
+bwBwAGUAcgB0AHkAIABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBl
+AC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUA
+bQBuACAAaQBuAHMAdABlAGEAZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfADMAYQBhAGEAYQAz
+ADIAMQA5ADMAMABjADQANwAwAGQAOAAyADkAMwBjADUAMAA5AGYAMQBlADYANAA0ADYAYQAuAFAA
+cgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAYrQZZik4s0WKsie14jO60gAE
+IAEBCAMgAAEFIAEBEREEIAEBDgUgAQERWQkgAwESPR0IEkEFIAIBCBwDIAACBiACAg4RdQUgAR0I
+CAYAARJ5EX0FIAASgIEHIAIBDhKAgQi3elxWGTTgiQiJhF3NgIDMkQIGCAMGEhQDBhIYAwYSRQMG
+ElEDBhJVAwYSIAUgAQESDAQgAQECCSAEAQgOEj0SQQUgAQESRQQAABJRBAAAElUFAAEBElUEAAAS
+IAMAAAEDKAAIAygAAgQIABJRBAgAElUECAASIAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2Vw
+dGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfM2FhYWEzMjE5MzBjNDcwZDgyOTNjNTA5ZjFlNjQ0
+NmEAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMwAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lv
+bj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAAAC0
+AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGli
+LCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVj
+NTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAA
+AFBBRFBBRFC0AAAA6DAAAAAAAAAAAAAAAjEAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPQwAAAA
+AAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
+AEgAAABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
+bgAAAAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAw
+ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
+bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
+AAAAUwBDAF8AMwBhAGEAYQBhADMAMgAxADkAMwAwAGMANAA3ADAAZAA4ADIAOQAzAGMANQAwADkA
+ZgAxAGUANgA0ADQANgBhAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADAALgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwAzAGEAYQBhAGEA
+MwAyADEAOQAzADAAYwA0ADcAMABkADgAMgA5ADMAYwA1ADAAOQBmADEAZQA2ADQANAA2AGEALgBk
+AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
+aAB0ACAAQAAgACAAMgAwADIAMwAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBz
+AAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADMA
+YQBhAGEAYQAzADIAMQA5ADMAMABjADQANwAwAGQAOAAyADkAMwBjADUAMAA5AGYAMQBlADYANAA0
+ADYAYQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwAzAGEA
+YQBhAGEAMwAyADEAOQAzADAAYwA0ADcAMABkADgAMgA5ADMAYwA1ADAAOQBmADEAZQA2ADQANAA2
+AGEAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAA
+OAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAABQxAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_3aaaa321930c470d8293c509f1e6446a</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">C3</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 4\Script Component.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 4\Script Component.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Data Flow Task 4\Script Component.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Script Component.Outputs[Output 0].Columns[DateID]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Script Component.Outputs[Output 0].Columns[DateID]"
+                      name="DateID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 4\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[ReleasedYear]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedYear"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedYear]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[ReleasedQuarter]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedQuarter"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedQuarter]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[ReleasedMonth]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedMonth"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedMonth]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[ReleasedDay]"
+                      cachedDataType="i4"
+                      cachedName="ReleasedDay"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedDay]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">4</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[LastUpdatedYear]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedYear"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedYear]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">5</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[LastUpdatedQuarter]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedQuarter"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedQuarter]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">6</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[LastUpdatedMonth]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedMonth"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedMonth]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">7</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[LastUpdatedDay]"
+                      cachedDataType="i4"
+                      cachedName="LastUpdatedDay"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedDay]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">8</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[Released]"
+                      cachedDataType="dbDate"
+                      cachedName="Released"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Released]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">9</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 4\Sort.Inputs[Sort Input].Columns[Last_Updated]"
+                      cachedDataType="dbDate"
+                      cachedName="Last_Updated"
+                      lineageId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Last_Updated]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">10</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedYear]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedYear]"
+                      name="ReleasedYear"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedYear]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedQuarter]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedQuarter]"
+                      name="ReleasedQuarter"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedQuarter]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedMonth]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedMonth]"
+                      name="ReleasedMonth"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedMonth]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedDay]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[ReleasedDay]"
+                      name="ReleasedDay"
+                      sortKeyPosition="4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[ReleasedDay]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedYear]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedYear]"
+                      name="LastUpdatedYear"
+                      sortKeyPosition="5">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedYear]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedQuarter]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedQuarter]"
+                      name="LastUpdatedQuarter"
+                      sortKeyPosition="6">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedQuarter]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedMonth]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedMonth]"
+                      name="LastUpdatedMonth"
+                      sortKeyPosition="7">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedMonth]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedDay]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[LastUpdatedDay]"
+                      name="LastUpdatedDay"
+                      sortKeyPosition="8">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[LastUpdatedDay]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[Released]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[Released]"
+                      name="Released"
+                      sortKeyPosition="9">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Released]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[Last_Updated]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task 4\Sort.Outputs[Sort Output].Columns[Last_Updated]"
+                      name="Last_Updated"
+                      sortKeyPosition="10">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1].Columns[Last_Updated]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 4.Paths[Aggregate Output 1]"
+              endId="Package\Data Flow Task 4\Sort.Inputs[Sort Input]"
+              name="Aggregate Output 1"
+              startId="Package\Data Flow Task 4\Aggregate.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Data Flow Task 4.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task 4\Aggregate.Inputs[Aggregate Input 1]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task 4\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task 4.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task 4\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task 4\Google_store.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task 4.Paths[Output 0]"
+              endId="Package\Data Flow Task 4\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Output 0"
+              startId="Package\Data Flow Task 4\Script Component.Outputs[Output 0]" />
+            <path
+              refId="Package\Data Flow Task 4.Paths[Sort Output]"
+              endId="Package\Data Flow Task 4\Script Component.Inputs[Input 0]"
+              name="Sort Output"
+              startId="Package\Data Flow Task 4\Sort.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 4"
+          TopLeft="188,149" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 4">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task 4\Script Component"
+          TopLeft="282,158" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task 4\Derived Column"
+          TopLeft="290,51" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Data Flow Task 4\Google_store"
+          TopLeft="67,47" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Data Flow Task 4\Sort"
+          TopLeft="512,153" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Data Flow Task 4\Aggregate"
+          TopLeft="511,49" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 4.Paths[Aggregate Output 1]"
+          TopLeft="574.5,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.5,62"
+              Start="0,0"
+              End="-13.5,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="-4,31" />
+                  <mssgle:LineSegment
+                    End="-9.5,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.5,31"
+                    Point2="-13.5,31"
+                    Point3="-13.5,35" />
+                  <mssgle:LineSegment
+                    End="-13.5,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 4.Paths[Sort Output]"
+          TopLeft="512,176.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-67,0"
+              Start="0,0"
+              End="-59.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-59.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 4.Paths[OLE DB Source Output]"
+          TopLeft="208,70">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82,0"
+              Start="0,0"
+              End="74.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="74.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 4.Paths[Derived Column Output]"
+          TopLeft="444,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67,0"
+              Start="0,0"
+              End="59.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="59.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Data Flow Task 4\Flat File Destination"
+          TopLeft="239,252" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 4.Paths[Output 0]"
+          TopLeft="363.5,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-38.5,52"
+              Start="0,0"
+              End="-38.5,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="-4,26" />
+                  <mssgle:LineSegment
+                    End="-34.5,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.5,26"
+                    Point2="-38.5,26"
+                    Point3="-38.5,30" />
+                  <mssgle:LineSegment
+                    End="-38.5,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
